@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Paleta de Colores - Ecodecor */
+  --color-primary: #4A7c59; /* Verde intermedio/branding */
+  --color-secondary: #8fc1a3; /* Verde claro */
+  --color-accent: #c8e0d3; /* Verde muy claro / fondo */
+  --color-dark: #1a2e22; /* Verde oscuro / textos */
+  --color-christmas: #c0392b; /* Rojo navidad / acentos */
+  
+  --color-bg-light: #f8fcf9;
+  --color-bg-white: #ffffff;
+  --color-text-main: #2c3e50;
+  
+  --font-main: 'Montserrat', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-bg-light);
+  color: var(--color-text-main);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-dark);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg-light);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-dark);
+}
+
+/* Layout utilidades */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 50px;
+  font-weight: 600;
+  border: 2px solid var(--color-primary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--color-primary);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid var(--color-christmas);
+  color: var(--color-christmas);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-christmas);
+  color: white;
+}

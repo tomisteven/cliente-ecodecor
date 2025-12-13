@@ -1,0 +1,111 @@
+.catalog-section {
+    padding: 80px 0;
+    background-color: var(--color-bg-light);
+}
+
+.catalog-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.catalog-header h2 {
+    font-size: 2.5rem;
+    color: var(--color-dark);
+    margin-bottom: 15px;
+}
+
+.catalog-header p {
+    color: #666;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.filter-btn {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 10px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: var(--font-main);
+    color: #555;
+    font-weight: 500;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(74, 124, 89, 0.2);
+}
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.catalog-item {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.catalog-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.img-wrapper {
+    position: relative;
+    height: 250px;
+    /* Altura fija para uniformidad */
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.catalog-item:hover .img-wrapper img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.category-tag {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.item-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.item-info h4 {
+    margin: 0;
+    color: var(--color-dark);
+    font-size: 1.1rem;
+}

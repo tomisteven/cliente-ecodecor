@@ -1,0 +1,132 @@
+.why-us-section {
+    padding: 120px 0;
+    background-color: #f4f7f5;
+    /* Gris verdoso muy suave */
+    position: relative;
+}
+
+.section-subtitle {
+    display: block;
+    color: var(--color-primary);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.section-header h2 {
+    font-size: 2.8rem;
+    color: var(--color-dark);
+    margin-bottom: 25px;
+}
+
+.divider {
+    background-color: var(--color-primary);
+}
+
+.steps-container-elegant {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0;
+    position: relative;
+    margin-top: 60px;
+}
+
+@media (max-width: 900px) {
+    .steps-container-elegant {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+}
+
+.step-card-wrapper {
+    flex: 1;
+    max-width: 350px;
+    position: relative;
+    z-index: 2;
+}
+
+.step-card-elegant {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    /* Bordes suaves modernizados */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.step-card-elegant:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-bottom-color: var(--color-primary);
+}
+
+.step-number-bg {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 8rem;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.03);
+    line-height: 1;
+    pointer-events: none;
+}
+
+.step-icon-elegant {
+    color: var(--color-primary);
+    margin-bottom: 25px;
+    transition: 0.4s;
+}
+
+.step-card-elegant:hover .step-icon-elegant {
+    transform: scale(1.1);
+    color: var(--color-dark);
+}
+
+.step-content h4 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: var(--color-dark);
+}
+
+.step-content p {
+    color: #777;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Conector Visual (Linea) */
+.step-connector {
+    flex: 0 0 100px;
+    height: 2px;
+    background: #ddd;
+    margin-top: 100px;
+    /* Alinear visualmente */
+    position: relative;
+}
+
+.step-connector::after {
+    content: '>';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f4f7f5;
+    color: #ccc;
+    padding: 0 10px;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 900px) {
+    .step-connector {
+        display: none;
+        /* Ocultar en móvil */
+    }
+}

@@ -1,0 +1,96 @@
+.testimonials-section {
+    padding: 80px 0;
+    background-color: #fafafa;
+}
+
+.testimonials-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+@media (max-width: 900px) {
+    .testimonials-content-wrapper {
+        flex-direction: column;
+    }
+
+    .client-reason-item.text-right {
+        text-align: center;
+    }
+}
+
+.testimonials-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex: 1;
+}
+
+.client-reason-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.client-reason-item.text-right {
+    text-align: right;
+}
+
+@media (max-width: 900px) {
+    .client-reason-item.text-right {
+        text-align: center;
+    }
+
+    .client-reason-item {
+        text-align: center;
+    }
+}
+
+
+.client-reason-item h4 {
+    color: var(--color-primary);
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.client-reason-item p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.center-badge-container {
+    flex: 0 0 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.eco-badge {
+    width: 180px;
+    height: 220px;
+    background: linear-gradient(180deg, #74b72e, #5a9e20);
+    /* Verde bandera */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.eco-badge img {
+    max-width: 80px;
+    margin-bottom: 20px;
+    filter: brightness(0) invert(1);
+}
+
+.eco-badge span {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}

@@ -1,0 +1,60 @@
+.parallax-section {
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* En móbiles el attachment: fixed a veces da problemas, se puede desactivar si se desea */
+@media (max-width: 768px) {
+    .parallax-section {
+        background-attachment: scroll;
+        height: 300px;
+    }
+}
+
+.parallax-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Oscurecer para legibilidad */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax-content h2 {
+    color: white;
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .parallax-content h2 {
+        font-size: 2rem;
+    }
+}
+
+.divider-light {
+    width: 100px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.parallax-content p {
+    color: #f0f0f0;
+    font-size: 1.2rem;
+    font-weight: 300;
+}

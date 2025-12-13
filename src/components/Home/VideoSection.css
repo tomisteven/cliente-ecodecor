@@ -1,0 +1,118 @@
+.video-section {
+    padding: 100px 0;
+    background-color: white;
+}
+
+.section-header-light {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-header-light h2 {
+    font-size: 2.8rem;
+    color: var(--color-dark);
+    margin-bottom: 20px;
+}
+
+.p-section-header-light {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 60px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.divider {
+    width: 80px;
+    height: 4px;
+    border-radius: 2px;
+}
+
+.video-grid {
+    display: grid;
+    /* Ajustamos grid para 3 por fila en desktop si da el ancho */
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.video-card-wrapper {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.video-card-wrapper:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-color: var(--color-primary);
+}
+
+.video-container-styled {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    /* Ratio 16:9 */
+    background: #f0f0f0;
+}
+
+.video-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-info {
+    padding: 20px;
+    background: white;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-header {
+    margin-bottom: 8px;
+}
+
+.video-info h4 {
+    font-size: 1.2rem;
+    color: var(--color-dark);
+    font-weight: 700;
+    margin: 0;
+}
+
+.video-subtitle {
+    color: #888;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    flex-grow: 1;
+    /* Empuja el action bottom */
+}
+
+.watch-action {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.video-card-wrapper:hover .watch-action {
+    opacity: 1;
+    transform: translateX(5px);
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "filename": "045-MS-15.jpg",
+    "name": "Mármol Statuario",
+    "category": "Living"
+  },
+  {
+    "id": 2,
+    "filename": "046-MS-14.jpg",
+    "name": "Granito Gris",
+    "category": "Cocina"
+  },
+  {
+    "id": 3,
+    "filename": "253.webp",
+    "name": "Madera Clara",
+    "category": "Interior"
+  },
+  {
+    "id": 4,
+    "filename": "807-scaled.webp",
+    "name": "Cemento Alisado",
+    "category": "Oficina"
+  },
+  {
+    "id": 5,
+    "filename": "921-scaled.webp",
+    "name": "Piedra Natural",
+    "category": "Baño"
+  },
+  {
+    "id": 6,
+    "filename": "922-scaled.webp",
+    "name": "Mármol Beige",
+    "category": "Living"
+  },
+  {
+    "id": 7,
+    "filename": "932-scaled.webp",
+    "name": "Madera Oscura",
+    "category": "Cuartos"
+  },
+  {
+    "id": 8,
+    "filename": "941-scaled.webp",
+    "name": "Textura Industrial",
+    "category": "Oficina"
+  },
+  {
+    "id": 9,
+    "filename": "957-scaled.webp",
+    "name": "Calacatta Gold",
+    "category": "Cocina"
+  },
+  {
+    "id": 10,
+    "filename": "958-scaled.webp",
+    "name": "Granito Negro",
+    "category": "Cocina"
+  },
+  {
+    "id": 11,
+    "filename": "959-scaled.webp",
+    "name": "Madera Rústica",
+    "category": "Interior"
+  },
+  {
+    "id": 12,
+    "filename": "960-scaled.webp",
+    "name": "Pizarra Gris",
+    "category": "Baño"
+  }
+]

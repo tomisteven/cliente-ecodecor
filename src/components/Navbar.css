@@ -1,0 +1,74 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 1000;
+    transition: all 0.4s ease;
+    background: transparent;
+}
+
+.navbar.scrolled,
+.navbar.dark-nav {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    backdrop-filter: blur(10px);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img {
+    height: 50px;
+    /* Ajusta segun el logo real */
+    width: auto;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.scrolled .logo-text,
+.dark-nav .logo-text {
+    color: var(--color-dark);
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.navbar.scrolled .nav-links a,
+.navbar.dark-nav .nav-links a {
+    color: var(--color-dark);
+}
+
+.nav-links a:hover {
+    color: var(--color-secondary);
+}
+
+.btn-nav {
+    background-color: var(--color-primary) !important;
+    color: white !important;
+    padding: 10px 25px !important;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+}
+
+.btn-nav:hover {
+    transform: translateY(-2px);
+    background-color: var(--color-dark) !important;
+}
