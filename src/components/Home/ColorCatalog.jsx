@@ -16,9 +16,15 @@ const ColorCatalog = () => {
     }, []);
 
     useEffect(() => {
-        const filtered = activeCategory === 'Todos'
+        let filtered = activeCategory === 'Todos'
             ? colorsData
             : colorsData.filter(item => item.linea === activeCategory);
+
+        // Limit to 12 items only when showing "Todos" to avoid excessive scrolling on mobile
+        if (activeCategory === 'Todos') {
+            filtered = filtered.slice(0, 12);
+        }
+
         setVisibleItems(filtered);
     }, [activeCategory]);
 

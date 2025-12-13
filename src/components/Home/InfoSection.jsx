@@ -50,7 +50,9 @@ const InfoSection = () => {
                         </div>
 
                         <Reveal delay={0.9}>
-                            <button className="btn btn-primary-eco">Quiero conocer más</button>
+                            <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
+                                <button className="btn btn-primary-eco">Quiero conocer más</button>
+                            </div>
                         </Reveal>
                     </div>
                 </div>

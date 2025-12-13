@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
+import { motion, AnimatePresence } from 'framer-motion';
 import logo from '../assets/logo.png';
 import './Navbar.css';
 
@@ -38,13 +39,26 @@ const Navbar = () => {
                     <div className={`bar ${isMobileMenuOpen ? 'open' : ''}`}></div>
                 </div>
 
-                <ul className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
-                    <li><NavLink to="/" onClick={() => setIsMobileMenuOpen(false)}>Inicio</NavLink></li>
-                    <li><NavLink to="/galeria" onClick={() => setIsMobileMenuOpen(false)}>Galería</NavLink></li>
-                    {/* <li><NavLink to="/nosotros" onClick={() => setIsMobileMenuOpen(false)}>Nosotros</NavLink></li> */}
-                    <li><NavLink to="/productos" onClick={() => setIsMobileMenuOpen(false)}>Productos</NavLink></li>
-                    <li><NavLink to="/contacto" onClick={() => setIsMobileMenuOpen(false)}>Contacto</NavLink></li>
-                </ul>
+                <AnimatePresence>
+                    {(isMobileMenuOpen || window.innerWidth > 768) && (
+                        <motion.ul
+                            className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}
+                            initial={window.innerWidth <= 768 ? { x: '100%' } : false}
+                            animate={window.innerWidth <= 768 ? { x: 0 } : false}
+                            exit={window.innerWidth <= 768 ? { x: '100%' } : false}
+                            transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                        >
+                            <li className="mobile-only-header">
+                                <img src={logo} alt="Menu Logo" className="logo-mobile-menu" />
+                            </li>
+                            <li><NavLink to="/" onClick={() => setIsMobileMenuOpen(false)}>Inicio</NavLink></li>
+                            <li><NavLink to="/galeria" onClick={() => setIsMobileMenuOpen(false)}>Galería</NavLink></li>
+                            <li><NavLink to="/productos" onClick={() => setIsMobileMenuOpen(false)}>Productos</NavLink></li>
+                            <li><NavLink to="/contacto" onClick={() => setIsMobileMenuOpen(false)}>Contacto</NavLink></li>
+                            <li className="mobile-close-btn" onClick={() => setIsMobileMenuOpen(false)}>Cerrar</li>
+                        </motion.ul>
+                    )}
+                </AnimatePresence>
             </div>
         </nav>
     );
