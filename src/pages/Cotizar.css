@@ -1,0 +1,357 @@
+/* ================================
+   COTIZAR PAGE STYLES
+   ================================ */
+
+/* Hero Section */
+.cotizar-hero {
+    position: relative;
+    height: 50vh;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a2e1d 0%, #163e2f 50%, #0b713e 100%);
+    overflow: hidden;
+}
+
+.cotizar-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.5;
+}
+
+.cotizar-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 70% 50%, rgba(74, 124, 89, 0.2) 0%, transparent 50%);
+}
+
+.cotizar-hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.cotizar-hero h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 700;
+    padding-top: 40px;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.cotizar-hero p {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Form Section */
+.cotizar-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.cotizar-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 50px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Form Wrapper */
+.cotizar-form-wrapper {
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.cotizar-form h2 {
+    font-size: 1.75rem;
+    color: #1a1a2e;
+    margin-bottom: 2rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: #fafafa;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #4a7c59;
+    background: white;
+    box-shadow: 0 0 0 4px rgba(74, 124, 89, 0.1);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #aaa;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 18px 36px;
+    background: linear-gradient(135deg, #4a7c59 0%, #3a6249 100%);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(74, 124, 89, 0.4);
+}
+
+.btn-submit.loading {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* Success Message */
+.success-message {
+    text-align: center;
+    padding: 60px 40px;
+}
+
+.success-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #4a7c59 0%, #3a6249 100%);
+    color: white;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.success-message h2 {
+    color: #1a1a2e;
+    margin-bottom: 1rem;
+}
+
+.success-message p {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.btn-home {
+    display: inline-block;
+    padding: 14px 36px;
+    background: #1a1a2e;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-home:hover {
+    background: #4a7c59;
+}
+
+/* Info Sidebar */
+.cotizar-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.info-card {
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.info-card h3 {
+    font-size: 1.25rem;
+    color: #1a1a2e;
+    margin-bottom: 1.5rem;
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.benefits-list li {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 1.25rem;
+}
+
+.benefits-list li:last-child {
+    margin-bottom: 0;
+}
+
+.benefit-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.benefits-list strong {
+    display: block;
+    color: #1a1a2e;
+    margin-bottom: 2px;
+}
+
+.benefits-list p {
+    margin: 0;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* Contact Card */
+.contact-card h3 {
+    text-align: center;
+}
+
+.contact-options {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-option {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 20px 15px;
+    background: #f8f9fa;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+.contact-option span {
+    font-size: 1.5rem;
+}
+
+.contact-option.whatsapp:hover {
+    background: #25d366;
+    color: white;
+}
+
+.contact-option.phone:hover {
+    background: #4a7c59;
+    color: white;
+}
+
+.contact-option.email:hover {
+    background: #1a1a2e;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .cotizar-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cotizar-info {
+        order: -1;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .info-card {
+        flex: 1;
+        min-width: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cotizar-hero {
+        height: 30vh;
+        min-height: 250px;
+    }
+
+    .cotizar-section {
+        padding: 50px 20px;
+    }
+
+    .cotizar-form-wrapper {
+        padding: 30px 25px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .cotizar-info {
+        flex-direction: column;
+    }
+
+    .info-card {
+        min-width: auto;
+    }
+
+    .contact-options {
+        flex-direction: column;
+    }
+
+    .contact-option {
+        flex-direction: row;
+        justify-content: center;
+    }
+}

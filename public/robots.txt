@@ -1,4 +1,26 @@
+# EcoDecor - Robots.txt
+# https://www.ecodecor.com.ar
+
 User-agent: *
 Allow: /
 
+# Bloquear recursos innecesarios
+Disallow: /admin/
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /node_modules/
+
+# Recursos de desarrollo
+Disallow: /src/
+Disallow: /.git/
+
+# Bloquear parámetros de tracking para evitar duplicados
+Disallow: /*?utm_*
+Disallow: /*?ref=*
+Disallow: /*?fbclid=*
+
+# Sitemap
 Sitemap: https://www.ecodecor.com.ar/sitemap.xml
+
+# Crawl delay para bots (opcional)
+# Crawl-delay: 1

@@ -17,9 +17,10 @@ const Home = () => {
   return (
     <>
       <SEO
-        title="Inicio"
-        description="Ecodecor - Transformamos tus espacios con revestimientos de diseño. Paneles WPC, Mármol PVC y más."
-        keywords="revestimientos, wpc, marmol pvc, decoracion cordoba, arquitectura, diseño interiores"
+        title="Revestimientos Decorativos Argentina"
+        description="Revestimientos Seda Algodón, Seda Papel, Seda Textiles y EcoPaper. Texturas únicas para transformar tus espacios. Envíos a todo Argentina. ¡Cotizá ahora!"
+        keywords="revestimientos decorativos, seda algodón, seda papel, seda textiles, ecopaper, revestimientos paredes, decoración interiores, texturas paredes"
+        url="/"
       />
       <HeroSection />
       <InfoSection />

@@ -1,21 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- HOME - Prioridad máxima -->
   <url>
     <loc>https://www.ecodecor.com.ar/</loc>
-    <lastmod>2024-05-21</lastmod>
+    <lastmod>2024-12-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- PRODUCTOS - Hub -->
   <url>
-    <loc>https://www.ecodecor.com.ar/galeria</loc>
-    <lastmod>2024-05-21</lastmod>
+    <loc>https://www.ecodecor.com.ar/productos</loc>
+    <lastmod>2024-12-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- PRODUCTOS - Seda Algodón -->
+  <url>
+    <loc>https://www.ecodecor.com.ar/productos/seda-algodon</loc>
+    <lastmod>2024-12-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- PRODUCTOS - Seda Papel -->
+  <url>
+    <loc>https://www.ecodecor.com.ar/productos/seda-papel</loc>
+    <lastmod>2024-12-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- PRODUCTOS - Seda Textiles -->
+  <url>
+    <loc>https://www.ecodecor.com.ar/productos/seda-textiles</loc>
+    <lastmod>2024-12-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- PRODUCTOS - EcoPaper -->
+  <url>
+    <loc>https://www.ecodecor.com.ar/productos/ecopaper</loc>
+    <lastmod>2024-12-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- GALERÍA -->
   <url>
-    <loc>https://www.ecodecor.com.ar/inicio</loc>
-    <lastmod>2024-05-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://www.ecodecor.com.ar/galeria</loc>
+    <lastmod>2024-12-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
+
+  <!-- COTIZAR - Conversión -->
+  <url>
+    <loc>https://www.ecodecor.com.ar/cotizar</loc>
+    <lastmod>2024-12-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- NOSOTROS -->
+  <url>
+    <loc>https://www.ecodecor.com.ar/nosotros</loc>
+    <lastmod>2024-12-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- CONTACTO -->
+  <url>
+    <loc>https://www.ecodecor.com.ar/contacto</loc>
+    <lastmod>2024-12-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>

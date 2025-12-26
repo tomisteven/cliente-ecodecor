@@ -101,6 +101,21 @@
     background-color: var(--color-dark);
 }
 
+/* CTA Button in Nav */
+.nav-cta {
+    background: linear-gradient(135deg, var(--primary-color, #4a7c59), #3a6249) !important;
+    color: white !important;
+    padding: 10px 24px !important;
+    border-radius: 30px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+}
+
+.nav-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(74, 124, 89, 0.4);
+}
+
 /* Mobile Menu Overlay Styles */
 @media (max-width: 768px) {
     .menu-icon {

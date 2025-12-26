@@ -52,9 +52,11 @@ const Navbar = () => {
                                 <img src={logo} alt="Menu Logo" className="logo-mobile-menu" />
                             </li>
                             <li><NavLink to="/" onClick={() => setIsMobileMenuOpen(false)}>Inicio</NavLink></li>
-                            <li><NavLink to="/galeria" onClick={() => setIsMobileMenuOpen(false)}>Galería</NavLink></li>
+                            <li><NavLink to="#catalogo" onClick={() => setIsMobileMenuOpen(false)}>Colores</NavLink></li>
                             <li><NavLink to="/productos" onClick={() => setIsMobileMenuOpen(false)}>Productos</NavLink></li>
-                            <li><NavLink to="/contacto" onClick={() => setIsMobileMenuOpen(false)}>Contacto</NavLink></li>
+                            <li><NavLink to="/galeria" onClick={() => setIsMobileMenuOpen(false)}>Galería</NavLink></li>
+                            <li><NavLink to="/nosotros" onClick={() => setIsMobileMenuOpen(false)}>Nosotros</NavLink></li>
+                            <li><NavLink to="/cotizar" onClick={() => setIsMobileMenuOpen(false)} className="nav-cta">Cotizar</NavLink></li>
                             <li className="mobile-close-btn" onClick={() => setIsMobileMenuOpen(false)}>Cerrar</li>
                         </motion.ul>
                     )}
