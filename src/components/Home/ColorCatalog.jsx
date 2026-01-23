@@ -34,7 +34,7 @@ const ColorCatalog = () => {
     };
 
     return (
-        <section className="catalog-section" id="#catalogo">
+        <section className="catalog-section" id="catalogo">
             <div className="container">
                 <Reveal>
                     <div className="catalog-header">

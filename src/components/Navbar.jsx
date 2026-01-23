@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import logo from '../assets/logo.png';
 import './Navbar.css';
@@ -8,7 +8,31 @@ const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const location = useLocation();
+    const navigate = useNavigate();
     const isHome = location.pathname === '/';
+
+    const handleColoresClick = (e) => {
+        e.preventDefault();
+        setIsMobileMenuOpen(false);
+
+        if (isHome) {
+            // Si ya estamos en Home, hacer scroll directamente
+            const catalogoSection = document.getElementById('catalogo');
+            if (catalogoSection) {
+                catalogoSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        } else {
+            // Si estamos en otra página, navegar a Home y luego hacer scroll
+            navigate('/');
+            // Esperar a que la página cargue y luego hacer scroll
+            setTimeout(() => {
+                const catalogoSection = document.getElementById('catalogo');
+                if (catalogoSection) {
+                    catalogoSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 100);
+        }
+    };
 
     useEffect(() => {
         const handleScroll = () => {
@@ -52,7 +76,7 @@ const Navbar = () => {
                                 <img src={logo} alt="Menu Logo" className="logo-mobile-menu" />
                             </li>
                             <li><NavLink to="/" onClick={() => setIsMobileMenuOpen(false)}>Inicio</NavLink></li>
-                            <li><NavLink to="#catalogo" onClick={() => setIsMobileMenuOpen(false)}>Colores</NavLink></li>
+                            <li><a href="#catalogo" onClick={handleColoresClick}>Colores</a></li>
                             <li><NavLink to="/productos" onClick={() => setIsMobileMenuOpen(false)}>Productos</NavLink></li>
                             <li><NavLink to="/galeria" onClick={() => setIsMobileMenuOpen(false)}>Galería</NavLink></li>
                             <li><NavLink to="/nosotros" onClick={() => setIsMobileMenuOpen(false)}>Nosotros</NavLink></li>

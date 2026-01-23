@@ -8,10 +8,7 @@ const Layout = () => {
     const [isLoading, setIsLoading] = useState(true);
     const location = useLocation();
 
-    // Solo mostrar Splash en la ruta raíz (Inicio) la primera vez o siempre que se cargue la app?
-    // User request: "al iniciar la web". 
-    // Usualmente es solo una vez al cargar ('mount').
-    // Si queremos que sea solo en Home, podemos chequear location.pathname === '/'
+
 
     return (
         <>

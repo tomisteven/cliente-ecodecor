@@ -117,8 +117,8 @@ const Nosotros = () => {
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.1 }}
                             >
-                                <span className="stat-number">{stat.number}</span>
-                                <span className="stat-label">{stat.label}</span>
+                                <span className="stat-number-nosotros">{stat.number}</span>
+                                <span className="stat-label-nosotros">{stat.label}</span>
                             </motion.div>
                         ))}
                     </div>
