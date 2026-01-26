@@ -25,8 +25,8 @@ const Testimonials = () => {
 
                         <FadeIn delay={0.3} direction="right">
                             <div className="client-reason-item">
-                                <h4>Compromiso</h4>
-                                <p>Seriedad y responsabilidad en cada proyecto.</p>
+                                <h4>Facil y rapido de aplicar</h4>
+                                <p>Se aplica en una sola pasada y no genera suciedad</p>
                             </div>
                         </FadeIn>
                     </div>
@@ -47,14 +47,14 @@ const Testimonials = () => {
                         <FadeIn delay={0.2} direction="left">
                             <div className="client-reason-item text-right">
                                 <h4>Equipo profesional</h4>
-                                <p>Asesoramiento experto para lograr los mejores resultados.</p>
+                                <p>Visitas a domicilio para asesoramiento y aplicación</p>
                             </div>
                         </FadeIn>
 
                         <FadeIn delay={0.3} direction="left">
                             <div className="client-reason-item text-right">
-                                <h4>Eco-Friendly</h4>
-                                <p>Materiales que cuidan tu salud y el planeta.</p>
+                                <h4>Sustentable</h4>
+                                <p>Los habitos sustentables crean un mejor futuro para todos</p>
                             </div>
                         </FadeIn>
                     </div>

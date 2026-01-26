@@ -18,7 +18,7 @@ const slides = [
     {
         id: 1,
         image: banner1,
-        title: "Antialérgico, Acústico, Inodoro",
+        title: "Antialérgico, Acústico, Inholoro",
         subtitle: "Se repara, se reutiliza, no deja enmiendas",
         cta: "Quiero conocer más",
         link: "/productos"

@@ -27,10 +27,10 @@ const InfoSection = () => {
 
                         <Reveal delay={0.4}>
                             <p className="eco-description">
-                                Ecologíco, una revestimiento a base de seda, algodón, celulosa y microfibras textiles de la naturaleza.
+                                Revestimiento a base de seda, algodon, papel y sustancias extraidas de la naturaleza.
                                 <br /><br />
-                                Totalmente natural, antiestático y no necesita preparación de las paredes, cubre grietas y huecos en una pasada y
-                                aísla el calor y la humedad.
+                                Totalmente natural, antiestático, cubre grietas, huecos en una pasada,
+                                aísla el calor, frio y humedad.
                             </p>
                         </Reveal>
 
@@ -42,10 +42,11 @@ const InfoSection = () => {
                                 <FadeIn delay={0.8} direction="left"><div className="eco-item">✓ Térmico</div></FadeIn>
                             </div>
                             <div className="list-col">
-                                <FadeIn delay={0.5} direction="right"><div className="eco-item">✓ Inodoro</div></FadeIn>
-                                <FadeIn delay={0.6} direction="right"><div className="eco-item">✓ La elasticidad</div></FadeIn>
+                                <FadeIn delay={0.5} direction="right"><div className="eco-item">✓ Inholoro</div></FadeIn>
+                                <FadeIn delay={0.6} direction="right"><div className="eco-item">✓ Inifugo</div></FadeIn>
                                 <FadeIn delay={0.7} direction="right"><div className="eco-item">✓ Durabilidad</div></FadeIn>
                                 <FadeIn delay={0.8} direction="right"><div className="eco-item">✓ Reparable</div></FadeIn>
+                                <FadeIn delay={0.8} direction="right"><div className="eco-item">✓ Reutilizable</div></FadeIn>
                             </div>
                         </div>
 

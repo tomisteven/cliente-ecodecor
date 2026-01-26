@@ -38,7 +38,7 @@ const ColorCatalog = () => {
             <div className="container">
                 <Reveal>
                     <div className="catalog-header">
-                        <h2>Nuestra Colección de Modelos</h2>
+                        <h2>Nuestra Colección de colores</h2>
                         <p>Explora nuestras líneas exclusivas y encuentra el diseño perfecto para tu espacio.</p>
                         <div className="divider mx-auto mt-2"></div>
                     </div>

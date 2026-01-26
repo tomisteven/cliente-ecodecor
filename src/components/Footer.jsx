@@ -27,18 +27,19 @@ const Footer = () => {
                 <div className="footer-col">
                     <h4>Contacto</h4>
                     <ul>
-                        <li>Av. Ejemplo 123, Ciudad</li>
-                        <li>+54 9 11 1234-5678</li>
-                        <li>info@ecodecor.com</li>
+                        <li>Av 12 Octubre 3005, Del Viso, Pilar</li>
+                        <li>+54 9 11 2518 1120</li>
+                        <li>ecodecorargentina@gmail.com</li>
                     </ul>
                 </div>
 
                 <div className="footer-col">
                     <h4>Síguenos</h4>
                     <div className="social-links">
-                        <a href="#" className="social-icon">IG</a>
-                        <a href="#" className="social-icon">FB</a>
-                        <a href="#" className="social-icon">LI</a>
+                        <a href="https://www.instagram.com/ecodecor_argentina/" className="social-icon">IG</a>
+                        <a href="https://www.facebook.com/profile.php?id=61556778683349&locale=es_LA" className="social-icon">FB</a>
+                        <a href="https://www.youtube.com/@ecodecorargentina" className="social-icon">YB</a>
+                        <a href="https://www.tiktok.com/@ecodecorargentina" className="social-icon">TK</a>
                     </div>
                 </div>
             </div>

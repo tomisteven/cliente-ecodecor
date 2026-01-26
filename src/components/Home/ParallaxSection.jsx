@@ -11,9 +11,9 @@ const ParallaxSection = () => {
                 <div className="container">
                     <Reveal>
                         <div className="parallax-content text-center">
-                            <h2>Diseño que inspira, Calidad que perdura</h2>
+                            <h2>100% Reutilizable</h2>
                             <div className="divider-light mx-auto"></div>
-                            <p>Creamos atmósferas únicas cuidando cada detalle.</p>
+                            <p>Hasta 30m2 de pared colocados en un solo dia sin ensuciar ni mover un solo mueble.</p>
                         </div>
                     </Reveal>
                 </div>
