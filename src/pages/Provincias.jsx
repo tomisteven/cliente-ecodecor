@@ -6,6 +6,18 @@ import './Provincias.css';
 
 const provincesData = [
     {
+        name: "Buenos Aires",
+        featured: true,
+        sellers: [
+            {
+                name: "EcoDecor Pilar",
+                address: "Av 12 Octubre 3005, Del Viso",
+                city: "Pilar",
+                phone: "+54 9 11 2518 1120"
+            }
+        ]
+    },
+    {
         name: "Córdoba",
         sellers: [
             {
@@ -56,8 +68,8 @@ const Provincias = () => {
         <>
             <SEO
                 title="Donde Comprar | EcoDecor Revestimientos"
-                description="Encontrá distribuidores oficiales de EcoDecor en tu provincia. Vendores autorizados en Córdoba, Tucumán, Entre Ríos, Santa Fe y Formosa."
-                keywords="ecodecor provincias, donde comprar revestimientos, distribuidores ecodecor, vendedores autorizados"
+                description="Encontrá distribuidores oficiales de EcoDecor en tu provincia. Vendedores autorizados en Buenos Aires (Pilar), Córdoba, Tucumán, Entre Ríos, Santa Fe y Formosa."
+                keywords="ecodecor provincias, donde comprar revestimientos, distribuidores ecodecor, vendedores autorizados, ecodecor pilar"
                 url="/provincias"
             />
 
@@ -88,8 +100,14 @@ const Provincias = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5, delay: index * 0.1 }}
                                 viewport={{ once: true }}
-                                className="provincia-card"
+                                className={`provincia-card ${prov.featured ? 'featured-card' : ''}`}
                             >
+                                {prov.featured && (
+                                    <div className="featured-badge">
+                                        <span className="badge-icon">⭐</span>
+                                        CASA CENTRAL
+                                    </div>
+                                )}
                                 <h2 className="provincia-name">{prov.name}</h2>
                                 <div className="sellers-list">
                                     {prov.sellers.map((seller, sIndex) => (

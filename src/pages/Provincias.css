@@ -86,6 +86,56 @@
     border-radius: 2px;
 }
 
+/* Featured Card Styling */
+.featured-card {
+    border: 2px solid #e2b13c;
+    background: linear-gradient(to bottom, #ffffff, #fffdf8);
+    position: relative;
+    overflow: hidden;
+    transform: scale(1.02);
+}
+
+.featured-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle at top right, rgba(226, 177, 60, 0.1), transparent);
+    pointer-events: none;
+}
+
+.featured-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #e2b13c 0%, #b28a2a 100%);
+    color: #1a1a2e;
+    padding: 6px 15px;
+    border-radius: 30px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 4px 15px rgba(226, 177, 60, 0.3);
+    z-index: 2;
+}
+
+.featured-card .provincia-name {
+    color: #1a1a2e;
+    padding-right: 130px;
+    /* Espacio para el badge */
+    margin-top: 10px;
+}
+
+.featured-card .seller-name {
+    color: #1a1a2e;
+    font-size: 1.3rem;
+}
+
 .sellers-list {
     display: flex;
     flex-direction: column;
