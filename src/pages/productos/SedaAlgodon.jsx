@@ -72,7 +72,10 @@ const SedaAlgodon = () => {
                         transition={{ duration: 0.8 }}
                         className="product-hero-content"
                     >
-                        <span className="product-badge">TEXTURA NATURAL</span>
+                        <div className="badge-container">
+                            <span className="product-badge">TEXTURA NATURAL</span>
+                            <span className="warranty-hero-badge">5 AÑOS DE GARANTÍA</span>
+                        </div>
                         <h1>Seda Algodón</h1>
                         <p className="product-tagline">
                             Calidez y Elegancia Natural para tus Espacios
@@ -115,8 +118,8 @@ const SedaAlgodon = () => {
                                     <span className="stat-number">15+</span>
                                     <span className="stat-label">Tonos disponibles</span>
                                 </div>
-                                <div className="stat">
-                                    <span className="stat-number">10</span>
+                                <div className="stat highlight-stat">
+                                    <span className="stat-number">5</span>
                                     <span className="stat-label">Años de garantía</span>
                                 </div>
                                 <div className="stat">

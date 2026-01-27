@@ -41,7 +41,7 @@ const Nosotros = () => {
             <SEO
                 title="Quiénes Somos | Expertos en Revestimientos"
                 description="Conocé a EcoDecor: más de 8 años transformando espacios en Argentina. Especialistas en paneles WPC, mármol PVC y soluciones decorativas de alta calidad."
-                keywords="ecodecor, sobre nosotros, empresa revestimientos, decoración córdoba, especialistas interiores"
+                keywords="ecodecor, sobre nosotros, empresa revestimientos, decoración pilar, especialistas interiores"
                 url="/nosotros"
             />
 
@@ -74,7 +74,7 @@ const Nosotros = () => {
                             <span className="section-label">Nuestra Historia</span>
                             <h2>De la pasión por el diseño a transformar hogares argentinos</h2>
                             <p>
-                                <strong>EcoDecor</strong> nació en Córdoba con una visión clara: hacer accesible
+                                <strong>EcoDecor</strong> nació en Buenos Aires con una visión clara: hacer accesible
                                 la decoración de alta calidad para todos. Comenzamos como un pequeño emprendimiento
                                 familiar y hoy somos referentes en revestimientos decorativos en Argentina.
                             </p>

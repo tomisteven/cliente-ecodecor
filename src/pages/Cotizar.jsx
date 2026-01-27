@@ -66,8 +66,8 @@ ${formData.mensaje || 'Sin mensaje adicional'}`;
         // Encode message for URL
         const encodedMessage = encodeURIComponent(message);
 
-        // WhatsApp number
-        const whatsappNumber = '5491125181120';
+        // WhatsApp number for Pilar shop
+        const whatsappNumber = '5491125181120'; // Assuming this is the Pilar number, as no new number was provided in the instruction.
 
         // Open WhatsApp with pre-filled message
         const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
@@ -154,7 +154,7 @@ ${formData.mensaje || 'Sin mensaje adicional'}`;
                                                 value={formData.telefono}
                                                 onChange={handleChange}
                                                 required
-                                                placeholder="+54 351 000 0000"
+                                                placeholder="+54 11 0000 0000"
                                             />
                                         </div>
                                         <div className="form-group">
@@ -166,7 +166,7 @@ ${formData.mensaje || 'Sin mensaje adicional'}`;
                                                 value={formData.ciudad}
                                                 onChange={handleChange}
                                                 required
-                                                placeholder="Ej: Córdoba Capital"
+                                                placeholder="Ej: Pilar, Buenos Aires"
                                             />
                                         </div>
                                     </div>
@@ -296,15 +296,15 @@ ${formData.mensaje || 'Sin mensaje adicional'}`;
                             <div className="info-card contact-card">
                                 <h3>¿Preferís contacto directo?</h3>
                                 <div className="contact-options">
-                                    <a href="https://wa.me/5493510000000" className="contact-option whatsapp">
+                                    <a href="https://wa.me/5491125181120" className="contact-option whatsapp">
                                         <span>📱</span>
                                         WhatsApp
                                     </a>
-                                    <a href="tel:+5493510000000" className="contact-option phone">
+                                    <a href="tel:+5491125181120" className="contact-option phone">
                                         <span>📞</span>
                                         Llamar
                                     </a>
-                                    <a href="mailto:info@ecodecor.com.ar" className="contact-option email">
+                                    <a href="mailto:ecodecorargentina@gmail.com" className="contact-option email">
                                         <span>✉️</span>
                                         Email
                                     </a>
