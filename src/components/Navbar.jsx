@@ -80,6 +80,7 @@ const Navbar = () => {
                             <li><NavLink to="/productos" onClick={() => setIsMobileMenuOpen(false)}>Productos</NavLink></li>
                             <li><NavLink to="/galeria" onClick={() => setIsMobileMenuOpen(false)}>Galería</NavLink></li>
                             <li><NavLink to="/nosotros" onClick={() => setIsMobileMenuOpen(false)}>Nosotros</NavLink></li>
+                            <li><NavLink to="/provincias" onClick={() => setIsMobileMenuOpen(false)}>Donde Comprar</NavLink></li>
                             <li><NavLink to="/cotizar" onClick={() => setIsMobileMenuOpen(false)} className="nav-cta">Cotizar</NavLink></li>
                             <li className="mobile-close-btn" onClick={() => setIsMobileMenuOpen(false)}>Cerrar</li>
                         </motion.ul>

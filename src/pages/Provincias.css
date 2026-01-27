@@ -1,0 +1,143 @@
+.provincias-hero {
+    position: relative;
+    height: 50vh;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a2e1d 0%, #163e2f 50%, #0b713e 100%);
+}
+
+.h1-container-provincias {
+    background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.provincias-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(74, 124, 89, 0.2) 0%, transparent 50%);
+}
+
+.provincias-hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+}
+
+.provincias-hero-content h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.provincias-hero-content p {
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+
+.provincias-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.provincias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.provincia-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.provincia-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.provincia-name {
+    color: #233423;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.provincia-name::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: #e2b13c;
+    border-radius: 2px;
+}
+
+.sellers-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.seller-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.seller-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seller-name {
+    font-weight: 700;
+    color: #2d3436;
+    font-size: 1.1rem;
+}
+
+.seller-location {
+    font-size: 0.95rem;
+    color: #636e72;
+    line-height: 1.4;
+}
+
+.seller-phone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #2ecc71;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 5px;
+    transition: transform 0.2s ease;
+}
+
+.seller-phone:hover {
+    transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+    .provincias-section {
+        padding: 60px 0;
+    }
+
+    .provincia-card {
+        padding: 30px;
+    }
+}
