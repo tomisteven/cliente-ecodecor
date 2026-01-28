@@ -101,7 +101,7 @@ const HeroSection = () => {
 
     return (
         <section className="hero-section">
-            <AnimatePresence mode='wait'>
+            <AnimatePresence initial={false}>
                 {slides.map((slide, index) => (
                     index === currentSlide && (
                         <motion.div
@@ -111,7 +111,7 @@ const HeroSection = () => {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
-                            transition={{ duration: 0.3 }}
+                            transition={{ duration: 1, ease: "easeInOut" }}
                         >
                             <div className="container hero-content">
                                 <motion.h1
