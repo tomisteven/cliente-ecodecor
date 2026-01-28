@@ -8,6 +8,7 @@
     height: 50vh;
     min-height: 400px;
     display: flex;
+    padding-top: 50px;
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, #1a2e1d 0%, #163e2f 50%, #0b713e 100%);
@@ -40,10 +41,24 @@
     color: white;
 }
 
+.hero-label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 1.5rem;
+    color: #e2b13c;
+}
+
 .nosotros-hero h1 {
     font-size: clamp(2.5rem, 6vw, 4rem);
     font-weight: 700;
     margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+.nosotros-hero h1 span {
+    color: #e2b13c;
 }
 
 .nosotros-hero p {
@@ -168,6 +183,46 @@
     color: #1a1a2e;
 }
 
+/* Benefits Grid */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.benefit-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(74, 124, 89, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    border-color: #4a7c59;
+}
+
+.benefit-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.benefit-card h4 {
+    font-size: 1.2rem;
+    color: #1a1a2e;
+    margin-bottom: 0.75rem;
+}
+
+.benefit-card p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+}
+
 .values-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -226,19 +281,57 @@
 .nosotros-cta p {
     font-size: 1.1rem;
     opacity: 0.9;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cta-quote {
+    font-style: italic;
+    font-size: 1.25rem !important;
+    color: #e2b13c;
+    margin-bottom: 2.5rem !important;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .btn-cta {
     display: inline-block;
-    padding: 18px 50px;
+    padding: 18px 40px;
     background: linear-gradient(135deg, #4a7c59 0%, #3a6249 100%);
     color: white;
     text-decoration: none;
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1rem;
     border-radius: 50px;
     transition: all 0.3s ease;
+}
+
+.btn-cta-secondary {
+    display: inline-block;
+    padding: 18px 40px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(74, 124, 89, 0.4);
+}
+
+.btn-cta-secondary:hover {
+    background: white;
+    color: #1a1a2e;
+    transform: translateY(-3px);
 }
 
 .btn-cta:hover {
@@ -299,5 +392,21 @@
 
     .nosotros-cta {
         padding: 60px 20px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn-cta,
+    .btn-cta-secondary {
+        width: 100%;
+        text-align: center;
+        padding: 15px 30px;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
     }
 }
