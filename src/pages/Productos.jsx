@@ -13,6 +13,15 @@ import ecopaperImage from '../assets/Ecopaper-Diseno-5.jpg';
 
 const productos = [
     {
+        id: 'ecopaper',
+        title: 'EcoPaper',
+        subtitle: 'Sustentable y Original',
+        description: 'Revestimiento ecológico con texturas únicas. Fabricado con materiales reciclados. La opción perfecta para proyectos con conciencia ambiental.',
+        features: ['100% ecológico', 'Texturas únicas', 'Reciclable'],
+        image: ecopaperImage,
+        link: '/productos/ecopaper'
+    },
+    {
         id: 'seda-algodon',
         title: 'Seda Algodón',
         subtitle: 'Textura Natural Premium',
@@ -35,18 +44,9 @@ const productos = [
         title: 'Seda Textiles',
         subtitle: 'Lujo y Sofisticación',
         description: 'Revestimiento con acabado textil premium. Aporta profundidad y sofisticación a los espacios. Ideal para ambientes que buscan un toque de lujo.',
-        features: ['Acabado textil', 'Look premium', 'Aislación acústica', 'Anti manchas'],
+        features: ['Acabado textil', 'Look premium', 'Aislación acústica', "Reparable", "Reutilizable"],
         image: sedaTextilesImage,
         link: '/productos/seda-textiles'
-    },
-    {
-        id: 'ecopaper',
-        title: 'EcoPaper',
-        subtitle: 'Sustentable y Original',
-        description: 'Revestimiento ecológico con texturas únicas. Fabricado con materiales reciclados. La opción perfecta para proyectos con conciencia ambiental.',
-        features: ['100% ecológico', 'Texturas únicas', 'Reciclable', 'Económico'],
-        image: ecopaperImage,
-        link: '/productos/ecopaper'
     }
 ];
 

@@ -142,18 +142,18 @@
 }
 
 /* Social Links */
-.social-links h3 {
+.contacto-social-links h3 {
     font-size: 1rem;
     color: #1a1a2e;
     margin-bottom: 1rem;
 }
 
-.social-icons {
+.contacto-social-icons {
     display: flex;
     gap: 15px;
 }
 
-.social-icon {
+.contacto-social-icon {
     padding: 12px 24px;
     background: #f8f9fa;
     border-radius: 10px;
@@ -162,16 +162,20 @@
     font-weight: 600;
     font-size: 0.9rem;
     transition: all 0.3s ease;
+    display: inline-block;
+    border: 1px solid transparent;
 }
 
-.social-icon.instagram:hover {
+.contacto-social-icon.instagram:hover {
     background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
     color: white;
+    border-color: transparent;
 }
 
-.social-icon.facebook:hover {
+.contacto-social-icon.facebook:hover {
     background: #1877f2;
     color: white;
+    border-color: transparent;
 }
 
 /* Map Section */
@@ -306,11 +310,14 @@
         height: 50px;
     }
 
-    .social-icons {
-        flex-direction: column;
+    .contacto-social-icons {
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
-    .social-icon {
+    .contacto-social-icon {
+        flex: 1;
         text-align: center;
+        min-width: 140px;
     }
 }

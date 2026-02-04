@@ -4,7 +4,7 @@ import { Reveal } from '../Reveal';
 
 // Imágenes seleccionadas (Nombres seguros sin espacios)
 import img1 from '../../assets/ECODECOR/20251202_181554.jpg';
-import img2 from '../../assets/ECODECOR/20251205_152759.jpg';
+import img2 from '../../assets/ECODECOR/3.jpg';
 import img3 from '../../assets/ECODECOR/20251205_153338.jpg'; // Reemplazo seguro
 import img4 from '../../assets/ECODECOR/20251205_153342.jpg'; // Reemplazo seguro
 import img5 from '../../assets/ECODECOR/20251205_153349.jpg'; // Reemplazo seguro

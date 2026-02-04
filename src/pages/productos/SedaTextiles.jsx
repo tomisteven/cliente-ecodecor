@@ -14,7 +14,12 @@ const features = [
     {
         icon: '🧵',
         title: 'Acabado Textil',
-        description: 'Textura que replica la sofisticación de las telas más finas en tus paredes.'
+        description: 'textura que replica la sofisticación de la seda el algodón en tu paredes.'
+    },
+    {
+        icon: '🛡️',
+        title: '100% Reparable',
+        description: 'Revestimiento 100% reparable.'
     },
     {
         icon: '👑',
@@ -26,11 +31,7 @@ const features = [
         title: 'Aislación Acústica',
         description: 'Contribuye a reducir el ruido ambiente, creando espacios más tranquilos.'
     },
-    {
-        icon: '🛡️',
-        title: 'Anti Manchas',
-        description: 'Tratamiento especial que repele manchas y facilita la limpieza.'
-    },
+
     {
         icon: '🌡️',
         title: 'Confort Térmico',

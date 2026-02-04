@@ -9,8 +9,8 @@ const Contacto = () => {
         <>
             <SEO
                 title="Contacto | EcoDecor Revestimientos"
-                description="Contactanos para asesoramiento sobre revestimientos. Whatsapp, teléfono, email o visitanos en Córdoba. Respuesta en 24hs. EcoDecor Argentina."
-                keywords="contacto ecodecor, whatsapp revestimientos, teléfono ecodecor, ubicación córdoba, consultas"
+                description="Contactanos para asesoramiento sobre revestimientos. Whatsapp, teléfono, email o visitanos en Pilar, Buenos Aires. Respuesta en 24hs. EcoDecor Argentina."
+                keywords="contacto ecodecor, whatsapp revestimientos, teléfono ecodecor, ubicación pilar, del viso, consultas"
                 url="/contacto"
             />
 
@@ -48,29 +48,29 @@ const Contacto = () => {
                             </p>
 
                             <div className="contact-methods">
-                                <a href="https://wa.me/5493510000000" className="contact-method">
+                                <a href="https://wa.me/5491125181120" className="contact-method">
                                     <div className="method-icon whatsapp">📱</div>
                                     <div className="method-info">
                                         <strong>WhatsApp</strong>
-                                        <span>+54 351 000 0000</span>
+                                        <span>+54 9 11 2518 1120</span>
                                         <small>Respuesta inmediata</small>
                                     </div>
                                 </a>
 
-                                <a href="tel:+5493510000000" className="contact-method">
+                                <a href="tel:+5491125181120" className="contact-method">
                                     <div className="method-icon phone">📞</div>
                                     <div className="method-info">
                                         <strong>Teléfono</strong>
-                                        <span>+54 351 000 0000</span>
-                                        <small>Lun a Vie 9 a 18hs</small>
+                                        <span>+54 11 2518 1120</span>
+                                        <small>Lun a Vie 9 a 13hs y 14 a 18hs</small>
                                     </div>
                                 </a>
 
-                                <a href="mailto:info@ecodecor.com.ar" className="contact-method">
+                                <a href="mailto:ecodecorargentina@gmail.com" className="contact-method">
                                     <div className="method-icon email">✉️</div>
                                     <div className="method-info">
                                         <strong>Email</strong>
-                                        <span>info@ecodecor.com.ar</span>
+                                        <span>ecodecorargentina@gmail.com</span>
                                         <small>Para consultas detalladas</small>
                                     </div>
                                 </a>
@@ -79,19 +79,19 @@ const Contacto = () => {
                                     <div className="method-icon location">📍</div>
                                     <div className="method-info">
                                         <strong>Ubicación</strong>
-                                        <span>Córdoba, Argentina</span>
+                                        <span>Del Viso, Pilar</span>
                                         <small>Envíos a todo el país</small>
                                     </div>
                                 </div>
                             </div>
 
-                            <div className="social-links">
+                            <div className="contacto-social-links">
                                 <h3>Seguinos en redes</h3>
-                                <div className="social-icons">
-                                    <a href="https://instagram.com/ecodecor.ar" target="_blank" rel="noopener noreferrer" className="social-icon instagram">
+                                <div className="contacto-social-icons">
+                                    <a href="https://www.instagram.com/ecodecor_argentina/" target="_blank" rel="noopener noreferrer" className="contacto-social-icon instagram">
                                         Instagram
                                     </a>
-                                    <a href="https://facebook.com/ecodecor.ar" target="_blank" rel="noopener noreferrer" className="social-icon facebook">
+                                    <a href="https://facebook.com/profile.php?id=61556778683349&locale=es_LA" target="_blank" rel="noopener noreferrer" className="contacto-social-icon facebook">
                                         Facebook
                                     </a>
                                 </div>
@@ -107,7 +107,7 @@ const Contacto = () => {
                         >
                             <div className="map-placeholder">
                                 <span>🗺️</span>
-                                <h3>Córdoba, Argentina</h3>
+                                <h3>Del Viso, Pilar</h3>
                                 <p>Realizamos envíos a todo el país</p>
                             </div>
 
@@ -124,7 +124,7 @@ const Contacto = () => {
                                 <ul>
                                     <li>
                                         <strong>Lunes a Viernes</strong>
-                                        <span>9:00 - 18:00</span>
+                                        <span>9:00 - 13:00 y 14:00 - 18:00</span>
                                     </li>
                                     <li>
                                         <strong>Sábados</strong>

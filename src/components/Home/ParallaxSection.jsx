@@ -11,9 +11,9 @@ const ParallaxSection = () => {
                 <div className="container">
                     <Reveal>
                         <div className="parallax-content text-center">
-                            <h2>100% Reutilizable</h2>
+                            <h2>¿Te mudas o queres cambiar el revestimiento a otra pared? </h2>
                             <div className="divider-light mx-auto"></div>
-                            <p>Hasta 30m2 de pared colocados en un solo dia sin ensuciar ni mover un solo mueble.</p>
+                            <p>EcoPaper no es un revestimiento descartable, si cambias el espacio, podes retirarlo y reutilizarlo en otra pared, evitando residuos y alargando la vida útil del producto</p>
                         </div>
                     </Reveal>
                 </div>

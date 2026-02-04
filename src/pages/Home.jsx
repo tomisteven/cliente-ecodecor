@@ -25,7 +25,7 @@ const Home = () => {
       <HeroSection />
       <InfoSection />
       <ColorCatalog />
-      <ModsCatalog />
+      {/* <ModsCatalog /> */}
       <WhyChooseUs />
       <InspirationSection />
       <VideoSection />

@@ -36,6 +36,13 @@
     max-width: 700px;
 }
 
+.badge-container {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
 .product-badge {
     display: inline-block;
     padding: 8px 20px;
@@ -44,7 +51,28 @@
     font-size: 0.8rem;
     font-weight: 700;
     letter-spacing: 2px;
-    margin-bottom: 1.5rem;
+}
+
+.warranty-hero-badge {
+    display: inline-block;
+    padding: 8px 20px;
+    background: linear-gradient(135deg, #e2b13c 0%, #b28a2a 100%);
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #1a1a2e;
+    box-shadow: 0 4px 15px rgba(226, 177, 60, 0.3);
+}
+
+.highlight-stat .stat-number {
+    color: #e2b13c;
+    text-shadow: 0 0 20px rgba(226, 177, 60, 0.2);
+}
+
+.highlight-stat .stat-label {
+    font-weight: 700;
+    color: #1a1a2e;
 }
 
 .product-hero h1 {

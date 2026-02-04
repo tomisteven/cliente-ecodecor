@@ -1,7 +1,7 @@
 import React from 'react';
 import './InfoSection.css';
 import { Reveal, FadeIn } from '../Reveal';
-import ecoImage from '../../assets/Ecopaper-Diseno-8-1.jpg'; // Usamos una imagen de asset
+import ecoImage from '../../assets/Ecopaper-Diseno-15.jpg'; // Usamos una imagen de asset única
 
 const InfoSection = () => {
     return (

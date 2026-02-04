@@ -39,9 +39,9 @@ const Nosotros = () => {
     return (
         <>
             <SEO
-                title="Quiénes Somos | Expertos en Revestimientos"
-                description="Conocé a EcoDecor: más de 8 años transformando espacios en Argentina. Especialistas en paneles WPC, mármol PVC y soluciones decorativas de alta calidad."
-                keywords="ecodecor, sobre nosotros, empresa revestimientos, decoración córdoba, especialistas interiores"
+                title="Conocé EcoDecor | Glamour Ecológico con Ecopaper"
+                description="EcoDecor es representante de Ecopaper en Argentina. Descubrí el papel de pared líquido: sustentable, aislante y 100% reutilizable. Líderes en revestimientos de última generación."
+                keywords="ecodecor, ecopaper argentina, papel de pared liquido, revestimientos ecologicos, decoracion sustentable, ecodecor pilar"
                 url="/nosotros"
             />
 
@@ -55,8 +55,9 @@ const Nosotros = () => {
                         transition={{ duration: 0.8 }}
                         className="nosotros-hero-content"
                     >
-                        <h1 className='h1-container-nosotros'>Quiénes Somos</h1>
-                        <p>Transformamos espacios con pasión y experiencia</p>
+                        <span className="hero-label">REVESTIMIENTOS DE ÚLTIMA GENERACIÓN</span>
+                        <h1 className='h1-container-nosotros'>¡Una explosión de <span>glamour ecológico</span> en tus paredes!</h1>
+                        <p>Innovación sustentable para transformar cada rincón de tu hogar</p>
                     </motion.div>
                 </div>
             </section>
@@ -71,23 +72,23 @@ const Nosotros = () => {
                             viewport={{ once: true }}
                             className="story-content"
                         >
-                            <span className="section-label">Nuestra Historia</span>
-                            <h2>De la pasión por el diseño a transformar hogares argentinos</h2>
+                            <span className="section-label">Nuestra Trayectoria</span>
+                            <h2>Calidad internacional ahora en Argentina</h2>
                             <p>
-                                <strong>EcoDecor</strong> nació en Córdoba con una visión clara: hacer accesible
-                                la decoración de alta calidad para todos. Comenzamos como un pequeño emprendimiento
-                                familiar y hoy somos referentes en revestimientos decorativos en Argentina.
+                                <strong>EcoDecor</strong> es una empresa internacional que comercializa sus productos en Argentina
+                                a través de una red de franquicias en expansión. Representamos el auténtico <strong>Ecopaper</strong>,
+                                un producto de uso consolidado en los mercados europeos, Estados Unidos y Brasil.
                             </p>
                             <p>
-                                Nuestra filosofía se centra en tres pilares: <strong>calidad sin compromiso</strong>,
-                                <strong>atención personalizada</strong> y <strong>respeto por el medio ambiente</strong>.
-                                Cada proyecto que realizamos es una oportunidad de transformar un espacio y
-                                mejorar la calidad de vida de nuestros clientes.
+                                Conocido técnicamente como "papel de pared líquido", Ecopaper está fabricado a base de
+                                <strong> seda, algodón y fibras naturales</strong>. Su llegada al país responde a la necesidad
+                                de ofrecer una alternativa estética de vanguardia que sea, al mismo tiempo, respetuosa
+                                con el medio ambiente y funcional para el hogar moderno.
                             </p>
                             <p>
-                                Trabajamos con arquitectos, diseñadores, constructoras y clientes finales,
-                                adaptándonos a cada necesidad y presupuesto. Nuestro compromiso es acompañarte
-                                desde la elección del material hasta la instalación final.
+                                Con sede principal en <strong>Pilar, Buenos Aires</strong>, nuestra misión es acompañar a cada
+                                cliente con asesoramiento y atención personalizada, garantizando resultados que combinan
+                                confort térmico, acústico y una belleza inigualable.
                             </p>
                         </motion.div>
                         <motion.div
@@ -134,6 +135,50 @@ const Nosotros = () => {
                         viewport={{ once: true }}
                         className="section-header"
                     >
+                        <span className="section-label">Tecnología y Confort</span>
+                        <h2>Beneficios de Ecopaper</h2>
+                    </motion.div>
+
+                    <div className="benefits-grid">
+                        <motion.div className="benefit-card" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+                            <span className="benefit-icon">🌿</span>
+                            <h4>Sustentabilidad</h4>
+                            <p>100% ecológico, inodoro y con certificación europea de calidad.</p>
+                        </motion.div>
+                        <motion.div className="benefit-card" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}>
+                            <span className="benefit-icon">♻️</span>
+                            <h4>Reutilizable</h4>
+                            <p>Se puede recuperar con agua y reutilizarlo en otro lugar sin perder sus propiedades.</p>
+                        </motion.div>
+                        <motion.div className="benefit-card" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }}>
+                            <span className="benefit-icon">🔇</span>
+                            <h4>Aislación</h4>
+                            <p>Excelente aislante acústico y térmico natural para tus ambientes.</p>
+                        </motion.div>
+                        <motion.div className="benefit-card" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.3 }}>
+                            <span className="benefit-icon">🛠️</span>
+                            <h4>Fácil Aplicación</h4>
+                            <p>Sin enmiendas ni suciedad. Permite cubrir hasta 30m² por día.</p>
+                        </motion.div>
+                        <motion.div className="benefit-card" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.4 }}>
+                            <span className="benefit-icon">🧱</span>
+                            <h4>Práctico</h4>
+                            <p>Cubre grietas y huecos en una sola pasada. Es elástico y antiestático.</p>
+                        </motion.div>
+                        <motion.div className="benefit-card" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.5 }}>
+                            <span className="benefit-icon">🔥</span>
+                            <h4>Seguridad</h4>
+                            <p>Material ignífugo y antialérgico, protegiendo la salud de toda la familia.</p>
+                        </motion.div>
+                    </div>
+
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="section-header"
+                        style={{ marginTop: '80px' }}
+                    >
                         <span className="section-label">Lo que nos define</span>
                         <h2>Nuestros Valores</h2>
                     </motion.div>
@@ -167,10 +212,15 @@ const Nosotros = () => {
                         className="cta-content"
                     >
                         <h2 className="h2-container-nosotros">¿Listo para transformar tu espacio?</h2>
-                        <p>Contanos tu proyecto y hagamos realidad tu visión</p>
-                        <a href="/cotizar" className="btn-cta">
-                            Contactanos
-                        </a>
+                        <p className="cta-quote">"A todos nuestros clientes ofrecemos asesoramiento y atención personalizada"</p>
+                        <div className="cta-buttons">
+                            <a href="/cotizar" className="btn-cta">
+                                Solicitar Asesoramiento
+                            </a>
+                            <a href="https://wa.me/5491125181120" target="_blank" rel="noopener noreferrer" className="btn-cta-secondary">
+                                WhatsApp: 11 2518-1120
+                            </a>
+                        </div>
                     </motion.div>
                 </div>
             </section>

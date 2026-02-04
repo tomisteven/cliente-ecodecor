@@ -7,9 +7,9 @@ import './HeroSection.css';
 import banner1 from '../../assets/ECODECOR/515016540_17973766148862930_4478820150561117147_n.jpg';
 import banner2 from '../../assets/ECODECOR/20251202_181559.jpg';
 import banner3 from '../../assets/ECODECOR/20251205_153145.jpg';
-import banner4 from '../../assets/ECODECOR/20251205_152759.jpg';
+import banner4 from '../../assets/ECODECOR/20251205_153338.jpg';
 // Nuevas 4
-import banner5 from '../../assets/ECODECOR/20251205_153349.jpg';
+import banner5 from '../../assets/ECODECOR/3.jpg';
 import banner6 from '../../assets/ECODECOR/Recoat.jpg';
 import banner7 from '../../assets/ECODECOR/Victoria.jpg';
 import banner8 from '../../assets/ECODECOR/20251205_153412.jpg';
@@ -101,7 +101,7 @@ const HeroSection = () => {
 
     return (
         <section className="hero-section">
-            <AnimatePresence mode='wait'>
+            <AnimatePresence initial={false}>
                 {slides.map((slide, index) => (
                     index === currentSlide && (
                         <motion.div
@@ -111,7 +111,7 @@ const HeroSection = () => {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
-                            transition={{ duration: 0.3 }}
+                            transition={{ duration: 1, ease: "easeInOut" }}
                         >
                             <div className="container hero-content">
                                 <motion.h1
@@ -141,8 +141,16 @@ const HeroSection = () => {
                 ))}
             </AnimatePresence>
 
-            <button className="slider-arrow left" onClick={prevSlide}>&#10094;</button>
-            <button className="slider-arrow right" onClick={nextSlide}>&#10095;</button>
+            <button className="slider-arrow left" onClick={prevSlide} aria-label="Anterior">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            <button className="slider-arrow right" onClick={nextSlide} aria-label="Siguiente">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
 
             <div className="slider-dots">
                 {slides.map((_, index) => (
