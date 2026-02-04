@@ -43,7 +43,7 @@ const InfoSection = () => {
                             </div>
                             <div className="list-col">
                                 <FadeIn delay={0.5} direction="right"><div className="eco-item">✓ Inholoro</div></FadeIn>
-                                <FadeIn delay={0.6} direction="right"><div className="eco-item">✓ Inifugo</div></FadeIn>
+                                <FadeIn delay={0.6} direction="right"><div className="eco-item">✓ Ignifugo</div></FadeIn>
                                 <FadeIn delay={0.7} direction="right"><div className="eco-item">✓ Durabilidad</div></FadeIn>
                                 <FadeIn delay={0.8} direction="right"><div className="eco-item">✓ Reparable</div></FadeIn>
                                 <FadeIn delay={0.8} direction="right"><div className="eco-item">✓ Reutilizable</div></FadeIn>

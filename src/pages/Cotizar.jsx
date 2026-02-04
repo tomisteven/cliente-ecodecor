@@ -3,6 +3,9 @@ import { motion } from 'framer-motion';
 import SEO from '../components/SEO';
 import WhatsAppButton from '../components/WhatsAppButton';
 import './Cotizar.css';
+import certCe1 from '../assets/cert-ce-1.png';
+import certBio from '../assets/cert-bio.png';
+import certCe2 from '../assets/cert-ce-2.png';
 
 const productOptions = [
     { value: 'seda-algodon', label: 'Seda Algodón' },
@@ -276,20 +279,7 @@ ${formData.mensaje || 'Sin mensaje adicional'}`;
                                             <p>Te ayudamos a elegir el mejor producto</p>
                                         </div>
                                     </li>
-                                    <li>
-                                        <span className="benefit-icon">📦</span>
-                                        <div>
-                                            <strong>Envíos a todo el país</strong>
-                                            <p>Llegamos a cualquier punto de Argentina</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <span className="benefit-icon">💳</span>
-                                        <div>
-                                            <strong>Múltiples formas de pago</strong>
-                                            <p>Efectivo, transferencia, tarjetas</p>
-                                        </div>
-                                    </li>
+
                                 </ul>
                             </div>
 
@@ -308,6 +298,15 @@ ${formData.mensaje || 'Sin mensaje adicional'}`;
                                         <span>✉️</span>
                                         Email
                                     </a>
+                                </div>
+                            </div>
+
+                            <div className="info-card certifications-card">
+                                <h3>Calidad Garantizada</h3>
+                                <div className="certifications-grid">
+                                    <img src={certCe1} alt="Certificado Europeu" className="cert-img" title="Certificado Europeu de Qualidade" />
+                                    <img src={certBio} alt="Bio Certificado" className="cert-img" title="Bio Certificado de Qualidade" />
+                                    <img src={certCe2} alt="Certificado Calidad" className="cert-img" title="Certificado de Calidad" />
                                 </div>
                             </div>
                         </motion.div>
