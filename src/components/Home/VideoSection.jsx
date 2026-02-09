@@ -3,13 +3,13 @@ import './VideoSection.css';
 import { Reveal, FadeIn } from '../Reveal';
 import { motion } from 'framer-motion';
 
-import img1 from '../../assets/ECODECOR/20251202_181554.jpg';
-import img2 from '../../assets/ECODECOR/3.jpg';
-import img3 from '../../assets/ECODECOR/20251205_153338.jpg';
-import img4 from '../../assets/ECODECOR/20251205_153342.jpg';
-import img5 from '../../assets/ECODECOR/20251205_153349.jpg';
-import img6 from '../../assets/ECODECOR/515016540_17973766148862930_4478820150561117147_n.jpg';
-import img7 from '../../assets/ECODECOR/457193784_17931724688919263_4452654476385081158_n.jpg';
+import img1 from '../../assets/optimized/20251202_181554.webp';
+import img2 from '../../assets/optimized/3.webp';
+import img3 from '../../assets/optimized/20251205_153338.webp';
+import img4 from '../../assets/optimized/20251205_153342.webp';
+import img5 from '../../assets/optimized/20251205_153349.webp';
+import img6 from '../../assets/optimized/515016540_17973766148862930_4478820150561117147_n.webp';
+import img7 from '../../assets/optimized/457193784_17931724688919263_4452654476385081158_n.webp';
 
 // Importación directa de videos
 import video1 from '../../assets/videos/Ecodecor-video-5.mp4';
@@ -80,13 +80,13 @@ const VideoSection = () => {
                         src={video1}
                         poster={poster1}
                         title="Preparación de Material"
-                        subtitle="Aprende a mezclar correctamente"
+                        subtitle="Como lo preparamos"
                         delay={0.1}
                     />
                     <VideoItem
                         src={video2}
                         poster={poster2}
-                        title="Aplicación Paso a Paso"
+                        title="Como lo aplicamos"
                         subtitle="Técnica básica de aplicación"
                         delay={0.2}
                     />

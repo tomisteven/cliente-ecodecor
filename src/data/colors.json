@@ -194,7 +194,7 @@
 },{
     "linea" : "Linea Elite",
     "codigo"  : "235",
-    "img" : "235.webp"
+    "img" : "235.png"
 },
 {
     "linea" : "Linea Elite",
@@ -204,7 +204,7 @@
 {
     "linea" : "Linea Elite",
     "codigo"  : "238",
-    "img" : "238.webp"
+    "img" : "238.png"
 },
 {
     "linea" : "Linea Elite",
@@ -219,7 +219,7 @@
 {
     "linea" : "Linea Elite",
     "codigo"  : "286",
-    "img" : "286.webp"
+    "img" : "286.png"
 },{
     "linea" : "Linea Victoria",
     "codigo"  : "701",
@@ -355,6 +355,16 @@
     "img" : "960.webp"
  },
  {
+    "linea" : "Linea Este",
+    "codigo"  : "961",
+    "img" : "961.png"
+ },
+ {
+    "linea" : "Linea Este",
+    "codigo"  : "962",
+    "img" : "962.png"
+ },
+ {
     "linea" : "Linea Versailles",
     "codigo"  : "108",
     "img" : "108.webp"
@@ -394,16 +404,20 @@
     "codigo"  : "1109",
     "img" : "1109.webp"
  },
- {
-    "linea" : "Linea Versailles",
-    "codigo"  : "253",
-    "img" : "253.webp"
- },
+ 
  {
     "linea" : "Linea Premium",
     "codigo"  : "807",
     "img" : "807.webp"
  }
+ , 
+ {
+    
+    "linea" : "Master",
+    "codigo"  : "M250",
+    "img" : "M250.png"
+ }
+ 
 ]
 
 

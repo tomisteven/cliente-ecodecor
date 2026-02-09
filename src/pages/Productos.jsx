@@ -6,10 +6,10 @@ import WhatsAppButton from '../components/WhatsAppButton';
 import './Productos.css';
 
 // Import images
-import sedaAlgodonImage from '../assets/Ecopaper-Diseno-1.jpg';
-import sedaPapelImage from '../assets/Ecopaper-Diseno-3.jpg';
-import sedaTextilesImage from '../assets/Ecopaper-Diseno-4.jpg';
-import ecopaperImage from '../assets/Ecopaper-Diseno-5.jpg';
+import sedaAlgodonImage from '../assets/optimized/Ecopaper-Diseno-1.webp';
+import sedaPapelImage from '../assets/optimized/Ecopaper-Diseno-3.webp';
+import sedaTextilesImage from '../assets/optimized/Ecopaper-Diseno-4.webp';
+import ecopaperImage from '../assets/optimized/Ecopaper-Diseno-5.webp';
 
 const productos = [
     {

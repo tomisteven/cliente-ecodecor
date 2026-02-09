@@ -3,22 +3,22 @@ import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import './HeroSection.css';
 
-// Imports de nuevas imágenes para Banner
-import banner1 from '../../assets/ECODECOR/515016540_17973766148862930_4478820150561117147_n.jpg';
-import banner2 from '../../assets/ECODECOR/20251202_181559.jpg';
-import banner3 from '../../assets/ECODECOR/20251205_153145.jpg';
-import banner4 from '../../assets/ECODECOR/20251205_153338.jpg';
+// Imports de imágenes optimizadas para Banner
+import banner1 from '../../assets/optimized/515016540_17973766148862930_4478820150561117147_n.webp';
+import banner2 from '../../assets/optimized/20251202_181559.webp';
+import banner3 from '../../assets/optimized/20251205_153145.webp';
+import banner4 from '../../assets/optimized/20251205_153338.webp';
 // Nuevas 4
-import banner5 from '../../assets/ECODECOR/3.jpg';
-import banner6 from '../../assets/ECODECOR/Recoat.jpg';
-import banner7 from '../../assets/ECODECOR/Victoria.jpg';
-import banner8 from '../../assets/ECODECOR/20251205_153412.jpg';
+import banner5 from '../../assets/optimized/3.webp';
+import banner6 from '../../assets/optimized/Recoat.webp';
+import banner7 from '../../assets/optimized/Victoria.webp';
+import banner8 from '../../assets/optimized/20251205_153412.webp';
 
 const slides = [
     {
         id: 1,
         image: banner1,
-        title: "Antialérgico, Acústico, Inholoro",
+        title: "Antialérgico, Acústico, Inoloro",
         subtitle: "Se repara, se reutiliza, no deja enmiendas",
         cta: "Quiero conocer más",
         link: "/productos"

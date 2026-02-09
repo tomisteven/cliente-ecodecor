@@ -4,9 +4,8 @@ import { Reveal, FadeIn } from '../components/Reveal';
 import SEO from '../components/SEO';
 import './Gallery.css';
 
-// Importación dinámica de imágenes de la carpeta ECODECOR
-// Filtramos solo imágenes comunes para web
-const imagesGlob = import.meta.glob('../assets/ECODECOR/*.{jpg,jpeg,png,webp}', { eager: true });
+// Importación dinámica de imágenes optimizadas
+const imagesGlob = import.meta.glob('../assets/optimized/*.{jpg,jpeg,png,webp}', { eager: true });
 
 // Convertimos el objeto glob a un array de URLs
 const galleryImages = Object.values(imagesGlob).map(img => img.default);

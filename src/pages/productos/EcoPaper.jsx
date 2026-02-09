@@ -6,9 +6,9 @@ import WhatsAppButton from '../../components/WhatsAppButton';
 import './ProductDetail.css';
 
 // Import images
-import heroImage from '../../assets/Ecopaper-Diseno-5.jpg';
-import img1 from '../../assets/Ecopaper-Diseno-13.jpg';
-import img2 from '../../assets/Ecopaper-Diseno-14.jpg';
+import heroImage from '../../assets/optimized/Ecopaper-Diseno-5.webp';
+import img1 from '../../assets/optimized/Ecopaper-Diseno-13.webp';
+import img2 from '../../assets/optimized/Ecopaper-Diseno-14.webp';
 
 const features = [
     {
@@ -132,8 +132,8 @@ const EcoPaper = () => {
                             viewport={{ once: true }}
                             className="intro-images"
                         >
-                            <img src={img1} alt="EcoPaper textura natural" className="intro-img-main" />
-                            <img src={img2} alt="EcoPaper acabado" className="intro-img-secondary" />
+                            <img src={img1} alt="EcoPaper textura natural" className="intro-img-main" loading="lazy" />
+                            <img src={img2} alt="EcoPaper acabado" className="intro-img-secondary" loading="lazy" />
                         </motion.div>
                     </div>
                 </div>

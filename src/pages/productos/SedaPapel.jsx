@@ -6,9 +6,9 @@ import WhatsAppButton from '../../components/WhatsAppButton';
 import './ProductDetail.css';
 
 // Import images
-import heroImage from '../../assets/Ecopaper-Diseno-3.jpg';
-import img1 from '../../assets/Ecopaper-Diseno-8-1.jpg';
-import img2 from '../../assets/Ecopaper-Diseno-9.jpg';
+import heroImage from '../../assets/optimized/Ecopaper-Diseno-3.webp';
+import img1 from '../../assets/optimized/Ecopaper-Diseno-8-1.webp';
+import img2 from '../../assets/optimized/Ecopaper-Diseno-9.webp';
 
 const features = [
     {
@@ -131,8 +131,8 @@ const SedaPapel = () => {
                             viewport={{ once: true }}
                             className="intro-images"
                         >
-                            <img src={img1} alt="Seda Papel textura" className="intro-img-main" />
-                            <img src={img2} alt="Seda Papel aplicación" className="intro-img-secondary" />
+                            <img src={img1} alt="Seda Papel textura" className="intro-img-main" loading="lazy" />
+                            <img src={img2} alt="Seda Papel aplicación" className="intro-img-secondary" loading="lazy" />
                         </motion.div>
                     </div>
                 </div>

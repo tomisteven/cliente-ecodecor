@@ -2,7 +2,7 @@ import React from 'react';
 // Nota: framer-motion no tiene componente Parallax directo simple, usaremos CSS + bg-attachment fixed.
 import './ParallaxSection.css';
 import { Reveal } from '../Reveal';
-import parallaxImg from '../../assets/ECODECOR/515016540_17973766148862930_4478820150561117147_n.jpg';
+import parallaxImg from '../../assets/optimized/515016540_17973766148862930_4478820150561117147_n.webp';
 
 const ParallaxSection = () => {
     return (

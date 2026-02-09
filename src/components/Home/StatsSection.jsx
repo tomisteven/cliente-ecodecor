@@ -87,7 +87,7 @@ const StatsSection = () => {
 
                 <div className="stats-container-modern">
                     <StatItem number="90" label="Proyectos Realizados" icon={ProjectIcon} delay={0.2} />
-                    <StatItem number="100" label="Clientes Satisfechos" icon={ClientIcon} delay={0.3} />
+                    <StatItem number="90" label="Clientes Satisfechos" icon={ClientIcon} delay={0.3} />
                     <StatItem number="80" label="Variedad De Colores" icon={ColorIcon} delay={0.4} />
                     <StatItem number="33.001" label="Seguidores en Redes" icon={FollowerIcon} delay={0.5} />
                 </div>

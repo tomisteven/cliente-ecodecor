@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import './InspirationSection.css';
 import { Reveal } from '../Reveal';
 
-// Imágenes seleccionadas (Nombres seguros sin espacios)
-import img1 from '../../assets/ECODECOR/20251202_181554.jpg';
-import img2 from '../../assets/ECODECOR/3.jpg';
-import img3 from '../../assets/ECODECOR/20251205_153338.jpg'; // Reemplazo seguro
-import img4 from '../../assets/ECODECOR/20251205_153342.jpg'; // Reemplazo seguro
-import img5 from '../../assets/ECODECOR/20251205_153349.jpg'; // Reemplazo seguro
-import img6 from '../../assets/ECODECOR/515016540_17973766148862930_4478820150561117147_n.jpg';
-import img7 from '../../assets/ECODECOR/457193784_17931724688919263_4452654476385081158_n.jpg';
+// Imágenes optimizadas
+import img1 from '../../assets/optimized/20251202_181554.webp';
+import img2 from '../../assets/optimized/3.webp';
+import img3 from '../../assets/optimized/20251205_153338.webp';
+import img4 from '../../assets/optimized/20251205_153342.webp';
+import img5 from '../../assets/optimized/20251205_153349.webp';
+import img6 from '../../assets/optimized/515016540_17973766148862930_4478820150561117147_n.webp';
+import img7 from '../../assets/optimized/457193784_17931724688919263_4452654476385081158_n.webp';
 
 const slides = [
     { id: 1, img: img1, title: "Texturas Orgánicas", desc: "Ambientes cálidos" },
