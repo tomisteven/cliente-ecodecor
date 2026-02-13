@@ -25,9 +25,13 @@ const CONFIG = {
     path.join(__dirname, '../src/assets/ECODECOR'),
   ],
   outputDir: path.join(__dirname, '../src/assets/optimized'),
-  quality: 80,           // Calidad WebP (0-100)
-  maxWidth: 1920,        // Ancho máximo en px
+  quality: 65,           // Calidad WebP (0-100) reducida para mayor ahorro
+  maxWidth: 1600,        // Ancho máximo reducido para optimizar carga
   extensions: ['.jpg', '.jpeg', '.png', '.webp'],
+  // Mapeo manual de rotaciones para archivos específicos (en grados)
+  rotationOverrides: {
+    // Ej: 'imagen.jpg': 90
+  }
 };
 
 async function main() {
@@ -78,8 +82,10 @@ async function main() {
         const originalSize = stats.size;
         totalOriginal += originalSize;
 
+        const rotation = CONFIG.rotationOverrides[file] || 0;
+
         await sharp(inputPath)
-          .rotate() // Auto-rotar según EXIF para corregir imágenes giradas
+          .rotate(rotation || undefined) // Si es undefined, usa EXIF automático
           .resize(CONFIG.maxWidth, null, {
             withoutEnlargement: true,
             fit: 'inside',
