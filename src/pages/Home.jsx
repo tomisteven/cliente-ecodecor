@@ -7,7 +7,7 @@ import ColorCatalog from '../components/Home/ColorCatalog';
 import ModsCatalog from '../components/Home/ModsCatalog';
 import WhyChooseUs from '../components/Home/WhyChooseUs';
 import InspirationSection from '../components/Home/InspirationSection';
-import VideoSection from '../components/Home/VideoSection';
+
 import Testimonials from '../components/Home/Testimonials';
 import ParallaxSection from '../components/Home/ParallaxSection';
 import StatsSection from '../components/Home/StatsSection';
@@ -28,7 +28,7 @@ const Home = () => {
       {/* <ModsCatalog /> */}
       <WhyChooseUs />
       <InspirationSection />
-      <VideoSection />
+
       <Testimonials />
       <ParallaxSection />
       <StatsSection />

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import SEO from '../components/SEO';
 import WhatsAppButton from '../components/WhatsAppButton';
 import './Nosotros.css';
-import image from '../assets/ECODECOR/3.jpg';
+import image from '../assets/optimized/3.webp';
 
 const values = [
     {
@@ -98,7 +98,7 @@ const Nosotros = () => {
                             className="story-image"
                         >
                             <div className="image-placeholder">
-                                <img src={image} alt="" />
+                                <img src={image} alt="Ecodecor proyecto" loading="lazy" />
                             </div>
                         </motion.div>
                     </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import './InfoSection.css';
 import { Reveal, FadeIn } from '../Reveal';
-import ecoImage from '../../assets/Ecopaper-Diseno-15.jpg'; // Usamos una imagen de asset única
+import ecoImage from '../../assets/optimized/Ecopaper-Diseno-15.webp';
 
 const InfoSection = () => {
     return (
@@ -12,7 +12,7 @@ const InfoSection = () => {
                     <div className="info-image-col">
                         <Reveal>
                             {/* Si existe imagen vertical tipo 'leaves' mejor, por ahora usamos una disponible */}
-                            <img src={ecoImage} alt="Ecopaper" className="eco-feature-img" />
+                            <img src={ecoImage} alt="Ecopaper" className="eco-feature-img" loading="lazy" />
                         </Reveal>
                     </div>
 
@@ -42,8 +42,8 @@ const InfoSection = () => {
                                 <FadeIn delay={0.8} direction="left"><div className="eco-item">✓ Térmico</div></FadeIn>
                             </div>
                             <div className="list-col">
-                                <FadeIn delay={0.5} direction="right"><div className="eco-item">✓ Inholoro</div></FadeIn>
-                                <FadeIn delay={0.6} direction="right"><div className="eco-item">✓ Inifugo</div></FadeIn>
+                                <FadeIn delay={0.5} direction="right"><div className="eco-item">✓ Inoloro</div></FadeIn>
+                                <FadeIn delay={0.6} direction="right"><div className="eco-item">✓ Ignifugo</div></FadeIn>
                                 <FadeIn delay={0.7} direction="right"><div className="eco-item">✓ Durabilidad</div></FadeIn>
                                 <FadeIn delay={0.8} direction="right"><div className="eco-item">✓ Reparable</div></FadeIn>
                                 <FadeIn delay={0.8} direction="right"><div className="eco-item">✓ Reutilizable</div></FadeIn>

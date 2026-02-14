@@ -355,3 +355,35 @@
         justify-content: center;
     }
 }
+
+/* Certifications Card */
+.certifications-card {
+    text-align: center;
+    order: 1;
+    /* Ensure it stays at the bottom or adjusts if needed */
+}
+
+.certifications-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+.cert-img {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.8;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.cert-img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.1);
+}
