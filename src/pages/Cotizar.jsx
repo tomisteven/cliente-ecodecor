@@ -73,6 +73,13 @@ ${formData.mensaje || 'Sin mensaje adicional'}`;
         const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
         window.open(whatsappUrl, '_blank');
 
+        // Google Ads Conversion Event
+        if (window.gtag) {
+            window.gtag('event', 'conversion', {
+                'send_to': 'AW-11473850308/aycQCLzBxaMZEMSflN8q'
+            });
+        }
+
         setIsSubmitting(false);
         setSubmitted(true);
     };
