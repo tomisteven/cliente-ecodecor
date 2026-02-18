@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import SEO from '../components/SEO';
 import WhatsAppButton from '../components/WhatsAppButton';
+import { trackWhatsAppClick } from '../utils/analytics';
 import './Cotizar.css';
 import certCe1 from '../assets/optimized/cert-ce-1.webp';
 import certBio from '../assets/optimized/cert-bio.webp';
@@ -293,7 +294,13 @@ ${formData.mensaje || 'Sin mensaje adicional'}`;
                             <div className="info-card contact-card">
                                 <h3>¿Preferís contacto directo?</h3>
                                 <div className="contact-options">
-                                    <a href="https://wa.me/5491125181120" className="contact-option whatsapp">
+                                    <a
+                                        href="https://wa.me/5491125181120"
+                                        className="contact-option whatsapp"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        onClick={trackWhatsAppClick}
+                                    >
                                         <span>📱</span>
                                         WhatsApp
                                     </a>

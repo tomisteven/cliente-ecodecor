@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import SEO from '../components/SEO';
 import WhatsAppButton from '../components/WhatsAppButton';
+import { trackWhatsAppClick } from '../utils/analytics';
 import './Nosotros.css';
 import image from '../assets/optimized/3.webp';
 
@@ -217,7 +218,13 @@ const Nosotros = () => {
                             <a href="/cotizar" className="btn-cta">
                                 Solicitar Asesoramiento
                             </a>
-                            <a href="https://wa.me/5491125181120" target="_blank" rel="noopener noreferrer" className="btn-cta-secondary">
+                            <a
+                                href="https://wa.me/5491125181120"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn-cta-secondary"
+                                onClick={trackWhatsAppClick}
+                            >
                                 WhatsApp: 11 2518-1120
                             </a>
                         </div>

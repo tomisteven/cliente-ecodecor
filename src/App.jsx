@@ -2,6 +2,7 @@ import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './layout/Layout';
 import ScrollToTop from './components/ScrollToTop';
+import Analytics from './components/Analytics';
 
 // Componente de loading para Suspense
 const PageLoader = () => (
@@ -44,6 +45,7 @@ function App() {
   return (
     <>
       <ScrollToTop />
+      <Analytics />
       <Suspense fallback={<PageLoader />}>
         <Routes>
           <Route path="/" element={<Layout />}>

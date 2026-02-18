@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import SEO from '../components/SEO';
 import WhatsAppButton from '../components/WhatsAppButton';
+import { trackWhatsAppClick } from '../utils/analytics';
 import './Contacto.css';
 
 const Contacto = () => {
@@ -48,7 +49,13 @@ const Contacto = () => {
                             </p>
 
                             <div className="contact-methods">
-                                <a href="https://wa.me/5491125181120" className="contact-method">
+                                <a
+                                    href="https://wa.me/5491125181120"
+                                    className="contact-method"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    onClick={trackWhatsAppClick}
+                                >
                                     <div className="method-icon whatsapp">📱</div>
                                     <div className="method-info">
                                         <strong>WhatsApp</strong>

@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import SEO from '../components/SEO';
 import WhatsAppButton from '../components/WhatsAppButton';
+import { trackWhatsAppClick } from '../utils/analytics';
 import './Provincias.css';
 
 const provincesData = [
@@ -121,6 +122,7 @@ const Provincias = () => {
                                                 className="seller-phone"
                                                 target="_blank"
                                                 rel="noopener noreferrer"
+                                                onClick={trackWhatsAppClick}
                                             >
                                                 <span>📱</span> {seller.phone}
                                             </a>
