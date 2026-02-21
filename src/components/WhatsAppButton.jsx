@@ -19,7 +19,7 @@ const WhatsAppButton = () => {
                 Asesorate con nosotros
             </div>
             <a
-                href="https://wa.me/5491125181120" // Reemplazar con el número real
+                href="https://wa.me/5491125181120?text=Hola%20Ecodecor%20Argentina.%20Necesito%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Ecodecor%20Argentina"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="whatsapp-btn"
