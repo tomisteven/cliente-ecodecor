@@ -1,20 +1,16 @@
+import { GOOGLE_ADS_ID, CONVERSION_LABELS } from '../config/analyticsConfig';
+
 export const trackConversion = (conversionLabel) => {
     if (window.gtag) {
         window.gtag('event', 'conversion', {
-            'send_to': `AW-11473850308/${conversionLabel}`
+            'send_to': `${GOOGLE_ADS_ID}/${conversionLabel}`
         });
     }
 };
 
 export const trackWhatsAppClick = () => {
     /** 
-     * ============================================================
-     * CAMBIAR AQUÍ LA ETIQUETA REAL LUEGO:
-     * Sustituir 'WHATSAPP_CONTACT' por la etiqueta de Google Ads.
-     * Ej: const REAL_LABEL = 'aycQCLzBxaMZEMSflN8q';
-     * ============================================================
+     * La etiqueta real se gestiona en src/config/analyticsConfig.js
      */
-    const REAL_LABEL = 'WHATSAPP_CONTACT'; // <--- CAMBIAR ESTO
-
-    trackConversion(REAL_LABEL);
+    trackConversion(CONVERSION_LABELS.WHATSAPP_CLICK);
 };

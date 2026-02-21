@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import SEO from '../components/SEO';
 import WhatsAppButton from '../components/WhatsAppButton';
-import { trackWhatsAppClick } from '../utils/analytics';
+import { trackWhatsAppClick, trackConversion } from '../utils/analytics';
+import { CONVERSION_LABELS } from '../config/analyticsConfig';
 import './Cotizar.css';
 import certCe1 from '../assets/optimized/cert-ce-1.webp';
 import certBio from '../assets/optimized/cert-bio.webp';
@@ -78,11 +79,7 @@ ${formData.mensaje || 'Sin mensaje adicional'}`;
         window.open(whatsappUrl, '_blank');
 
         // Google Ads Conversion Event
-        if (window.gtag) {
-            window.gtag('event', 'conversion', {
-                'send_to': 'AW-11473850308/aycQCLzBxaMZEMSflN8q'
-            });
-        }
+        trackConversion(CONVERSION_LABELS.QUOTATION_SUBMIT);
 
         setIsSubmitting(false);
         setSubmitted(true);

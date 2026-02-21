@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { GOOGLE_ADS_ID } from '../config/analyticsConfig';
 
 const Analytics = () => {
     const location = useLocation();
@@ -14,7 +15,7 @@ const Analytics = () => {
             });
 
             // Google Ads (Conversion Linker and Remarketing)
-            window.gtag('config', 'AW-11473850308', {
+            window.gtag('config', GOOGLE_ADS_ID, {
                 page_path: location.pathname + location.search
             });
         }
