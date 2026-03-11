@@ -50,7 +50,7 @@ const Contacto = () => {
 
                             <div className="contact-methods">
                                 <a
-                                    href="https://wa.me/5491125181120"
+                                    href="https://wa.me/541123500092"
                                     className="contact-method"
                                     target="_blank"
                                     rel="noopener noreferrer"
@@ -59,16 +59,16 @@ const Contacto = () => {
                                     <div className="method-icon whatsapp">📱</div>
                                     <div className="method-info">
                                         <strong>WhatsApp</strong>
-                                        <span>+54 9 11 2518 1120</span>
+                                        <span>+54 11 2350-0092</span>
                                         <small>Respuesta inmediata</small>
                                     </div>
                                 </a>
 
-                                <a href="tel:+5491125181120" className="contact-method">
+                                <a href="tel:+541123500092" className="contact-method">
                                     <div className="method-icon phone">📞</div>
                                     <div className="method-info">
                                         <strong>Teléfono</strong>
-                                        <span>+54 11 2518 1120</span>
+                                        <span>+54 11 2350-0092</span>
                                         <small>Lun a Vie 9 a 13hs y 14 a 18hs</small>
                                     </div>
                                 </a>

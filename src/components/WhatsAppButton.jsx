@@ -1,12 +1,33 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import './WhatsAppButton.css';
 import { trackWhatsAppClick } from '../utils/analytics';
+
+// Lista de mensajes variados para evitar que todos los usuarios
+// envíen el mismo texto y Meta lo detecte como spam automatizado.
+const WHATSAPP_MESSAGES = [
+    'Hola! Vi su página y me gustaría recibir más información sobre los revestimientos.',
+    'Buen día! Quisiera saber más sobre los productos de EcoDecor.',
+    'Hola, me interesa conocer los revestimientos que ofrecen. ¿Pueden asesorarme?',
+    'Buenas! Estoy buscando revestimientos para mi hogar y me gustaría recibir información.',
+    'Hola EcoDecor! Necesito asesoramiento sobre sus productos de revestimiento.',
+    'Buen día! Vi la página web y me gustaría pedir información sobre los materiales disponibles.',
+    'Hola! Me interesa saber los colores y precios de los revestimientos.',
+    'Buenas tardes! Quisiera recibir más detalles sobre los productos de EcoDecor Argentina.',
+    'Hola, estoy interesado/a en sus revestimientos decorativos. ¿Pueden contactarme?',
+    'Buen día! Vi la web de EcoDecor y me gustaría hacer una consulta sobre los productos.',
+];
 
 const WhatsAppButton = () => {
     const [isVisible, setIsVisible] = useState(false);
 
+    // Se elige un mensaje al azar una sola vez por sesión (useMemo)
+    const whatsappUrl = useMemo(() => {
+        const randomIndex = Math.floor(Math.random() * WHATSAPP_MESSAGES.length);
+        const message = WHATSAPP_MESSAGES[randomIndex];
+        return `https://wa.me/541123500092?text=${encodeURIComponent(message)}`;
+    }, []);
+
     useEffect(() => {
-        // Mostrar el botón después de un pequeño delay para no competir con el Splash
         const timer = setTimeout(() => {
             setIsVisible(true);
         }, 3000);
@@ -19,7 +40,7 @@ const WhatsAppButton = () => {
                 Asesorate con nosotros
             </div>
             <a
-                href="https://wa.me/5491125181120?text=Hola%20Ecodecor%20Argentina.%20Necesito%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Ecodecor%20Argentina"
+                href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="whatsapp-btn"
