@@ -12,6 +12,7 @@ import Testimonials from '../components/Home/Testimonials';
 import ParallaxSection from '../components/Home/ParallaxSection';
 import StatsSection from '../components/Home/StatsSection';
 import WhatsAppButton from '../components/WhatsAppButton';
+import VideoShowcase from '../components/Home/VideoShowcase';
 
 const Home = () => {
   return (
@@ -28,6 +29,7 @@ const Home = () => {
       {/* <ModsCatalog /> */}
       <WhyChooseUs />
       <InspirationSection />
+      <VideoShowcase />
 
       <Testimonials />
       <ParallaxSection />

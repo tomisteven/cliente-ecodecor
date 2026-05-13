@@ -63,6 +63,26 @@
     background-color: var(--color-christmas);
     border-color: var(--color-christmas);
     transform: translateY(-3px);
+    color: white;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-outline-hero {
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    border: 2px solid white;
+}
+
+.btn-outline-hero:hover {
+    background-color: white;
+    border-color: white;
+    color: var(--color-primary);
 }
 
 .slider-arrow {
@@ -201,5 +221,15 @@
     .slider-arrow svg {
         width: 20px;
         height: 20px;
+    }
+
+    .hero-buttons {
+        gap: 10px;
+    }
+
+    .btn-hero {
+        padding: 12px 25px;
+        font-size: 0.9rem;
+        width: 100%;
     }
 }

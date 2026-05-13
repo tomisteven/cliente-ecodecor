@@ -129,11 +129,13 @@ const HeroSection = () => {
                                     {slide.subtitle}
                                 </motion.p>
                                 <motion.div
-                                    initial={{ scale: 0.8, opacity: 0 }}
-                                    animate={{ scale: 1, opacity: 1 }}
-                                    transition={{ delay: 1.1, duration: 0.5 }}
+                                    className="hero-buttons"
+                                    initial={{ y: 30, opacity: 0 }}
+                                    animate={{ y: 0, opacity: 1 }}
+                                    transition={{ delay: 1, duration: 0.8 }}
                                 >
                                     <Link to={slide.link} className="btn-hero">{slide.cta}</Link>
+                                    <a href="mailto:ecodecorargentina@gmail.com" className="btn-hero btn-outline-hero">Enviar consulta al email</a>
                                 </motion.div>
                             </div>
                         </motion.div>
