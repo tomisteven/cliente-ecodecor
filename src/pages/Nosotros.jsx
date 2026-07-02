@@ -219,13 +219,13 @@ const Nosotros = () => {
                                 Solicitar Asesoramiento
                             </a>
                             <a
-                                href="https://wa.me/5491125181120"
+                                href="https://wa.me/541123500092"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="btn-cta-secondary"
                                 onClick={trackWhatsAppClick}
                             >
-                                WhatsApp: 11 2518-1120
+                                WhatsApp: 11 2350-0092
                             </a>
                         </div>
                     </motion.div>

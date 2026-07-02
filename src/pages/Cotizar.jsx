@@ -72,7 +72,7 @@ ${formData.mensaje || 'Sin mensaje adicional'}`;
         const encodedMessage = encodeURIComponent(message);
 
         // WhatsApp number for Pilar shop
-        const whatsappNumber = '5491125181120'; // Assuming this is the Pilar number, as no new number was provided in the instruction.
+        const whatsappNumber = '541123500092';
 
         // Open WhatsApp with pre-filled message
         const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
@@ -292,7 +292,7 @@ ${formData.mensaje || 'Sin mensaje adicional'}`;
                                 <h3>¿Preferís contacto directo?</h3>
                                 <div className="contact-options">
                                     <a
-                                        href="https://wa.me/5491125181120"
+                                        href="https://wa.me/541123500092"
                                         className="contact-option whatsapp"
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -301,7 +301,7 @@ ${formData.mensaje || 'Sin mensaje adicional'}`;
                                         <span>📱</span>
                                         WhatsApp
                                     </a>
-                                    <a href="tel:+5491125181120" className="contact-option phone">
+                                    <a href="tel:+541123500092" className="contact-option phone">
                                         <span>📞</span>
                                         Llamar
                                     </a>

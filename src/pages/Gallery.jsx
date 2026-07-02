@@ -4,13 +4,15 @@ import { Reveal, FadeIn } from '../components/Reveal';
 import SEO from '../components/SEO';
 import './Gallery.css';
 
-// Importación dinámica de imágenes optimizadas
-const imagesGlob = import.meta.glob('../assets/optimized/*.{jpg,jpeg,png,webp}', { eager: true });
+// Importación dinámica de imágenes de ambas carpetas
+const optimizedGlob = import.meta.glob('../assets/optimized/*.{jpg,jpeg,png,webp}', { eager: true });
+const nuevosGlob = import.meta.glob('../assets/nuevos/*.{jpg,jpeg,png,webp}', { eager: true });
 
-// Convertimos el objeto glob a un array de URLs y limitamos a las primeras 20
-const galleryImages = Object.values(imagesGlob)
-    .map(img => img.default)
-    .slice(0, 21);
+// Combinamos las imágenes, poniendo las nuevas primero
+const galleryImages = [
+    ...Object.values(nuevosGlob).map(img => img.default),
+    ...Object.values(optimizedGlob).map(img => img.default)
+];
 
 const Gallery = () => {
     const [selectedImage, setSelectedImage] = useState(null);
