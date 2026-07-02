@@ -5,6 +5,7 @@
  */
 
 export const GOOGLE_ADS_ID = 'AW-11473850308';
+export const META_PIXEL_ID = '1053066764046251';
 
 export const CONVERSION_LABELS = {
     // Reemplaza estos valores con las etiquetas (Labels) que te da Google Ads

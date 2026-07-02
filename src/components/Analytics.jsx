@@ -19,6 +19,11 @@ const Analytics = () => {
                 page_path: location.pathname + location.search
             });
         }
+
+        // Meta Pixel (Facebook) page view
+        if (window.fbq) {
+            window.fbq('track', 'PageView');
+        }
     }, [location]);
 
     return null;
