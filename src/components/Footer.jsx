@@ -27,7 +27,7 @@ const Footer = () => {
                 <div className="footer-col">
                     <h4>Contacto</h4>
                     <ul>
-                        <li>Av 12 Octubre 3005, Del Viso, Pilar</li>
+                        <li>Guayaquil 1730, Ing Pablo Nogues - Solo Con Cita Previa</li>
                         <li>+54 9 11 2518 1120</li>
                         <li>ecodecorargentina@gmail.com</li>
                     </ul>
