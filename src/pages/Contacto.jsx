@@ -86,7 +86,7 @@ const Contacto = () => {
                                     <div className="method-icon location">📍</div>
                                     <div className="method-info">
                                         <strong>Ubicación</strong>
-                                        <span>Del Viso, Pilar</span>
+                                        <span>Ing Pablo Nogues</span>
                                         <small>Envíos a todo el país</small>
                                     </div>
                                 </div>
@@ -114,7 +114,7 @@ const Contacto = () => {
                         >
                             <div className="map-placeholder">
                                 <span>🗺️</span>
-                                <h3>Del Viso, Pilar</h3>
+                                <h3>Ing Pablo Nogues</h3>
                                 <p>Realizamos envíos a todo el país</p>
                             </div>
 

@@ -11,9 +11,9 @@ const provincesData = [
         featured: true,
         sellers: [
             {
-                name: "EcoDecor Pilar",
-                address: "Av 12 Octubre 3005, Del Viso",
-                city: "Pilar",
+                name: "EcoDecor Casa Central",
+                address: "Guayaquil 1730, Ing Pablo Nogues",
+                city: "Solo Con Cita Previa",
                 phone: "+54 9 11 2518 1120"
             }
         ]
